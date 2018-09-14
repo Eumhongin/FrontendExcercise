@@ -9,6 +9,7 @@
     <script src="js/jquery-min.js" charset="utf-8"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+
       $('li').hover(function(){
         $('li > a').css({"color":"white"});
       },function(){
@@ -24,7 +25,13 @@
     <hr>
     <ul class="container">
       <!-- <li><a href="#"></a></li> -->
-      <li><a href="web1.html">WEB1</a></li>
+      <li><a href="web1.html">Web-01</a></li>
     </ul>
+    <script type="text/javascript">
+    console.log($('li').outerHeight());
+    console.log(($('li').outerHeight()-$('li a').outerHeight())/2);
+    $('li a').css({'margin-top':($('li').outerHeight()-$('li a').outerHeight())/2+'px'})
+
+    </script>
   </body>
 </html>
