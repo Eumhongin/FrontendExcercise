@@ -9,3 +9,12 @@ html,body{
   margin-left: 20%;
   width: 60%;
 }
+
+.row:after{
+  content:'';
+  clear: both;
+  box-sizing: content-box;
+}
+.row > *{
+  float: left;
+}
